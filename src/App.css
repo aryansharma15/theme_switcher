@@ -48,7 +48,7 @@ label:after {
   height: 40px;
   background: #fff;
   border-radius: 90px;
-  transition: 0.3s;
+  transition: 0.25s ease-in-out;
 }
 
 input:checked+label {
@@ -61,7 +61,7 @@ input:checked+label:after {
 }
 
 label:active:after {
-  width: 70px;
+  width: 60px;
 }
 
 /* // centering */
