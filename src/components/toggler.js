@@ -12,15 +12,6 @@ const Toggler = (props) => {
 
 	return (
 		<div className="my-5 toggle-div">
-			{/* <Form className="container">
-                <FormGroup switch className="centered">
-                    <Input type="switch" role="switch" className="toggler-input" />
-                    <Label check className="">
-                        Toggle
-                    </Label>
-                </FormGroup>
-			</Form> */}
-
 			<input type="checkbox" id="switch" />
 			<label htmlFor="switch"></label>
 
