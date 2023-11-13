@@ -4,15 +4,17 @@ import "../App.css";
 // import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const Toggler = (props) => {
-	const [state, setState] = useState("");
+	const [color, setColor] = useState("");
+	const [text, setText] = useState("");
 
 	const Changer = () => {
-		setState(false);
+		setColor("#2d2d2d");
+		setText("#ffffff");
 	};
 
 	return (
-		<div className="my-5 toggle-div">
-			<input type="checkbox" id="switch" />
+		<div className=" toggle-div">
+			<input type="checkbox" id="switch" onClick={Changer} />
 			<label htmlFor="switch"></label>
 
 			<h1>Toggle Theme</h1>
