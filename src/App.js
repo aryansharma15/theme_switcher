@@ -20,9 +20,9 @@ function App() {
 	};
 
 	return (
-		<div className="App">
+		<div className="App" style={{ backgroundColor: theme.bgColor, color: theme.color }}>
 			<div>
-				<Toggler></Toggler>
+				<Toggler changeTheme={changeTheme}></Toggler>
 				{/* <Counter></Counter> */}
 			</div>
 		</div>
