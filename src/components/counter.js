@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import "../App.css";
 
 function Counter() {
 	let [count, setCount] = useState("0");
 
 	return (
-		<div>
+		<div className="counter">
 			<h1>Currently: {count}</h1>
 			<button
 				className="counter-btns incr-btn"

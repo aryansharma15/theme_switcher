@@ -79,3 +79,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+.counter{
+  width: 250px;
+  margin: auto;
+  margin-top: 100px;
+}
