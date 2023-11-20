@@ -80,8 +80,43 @@ body {
   height: 100vh;
 }
 
+/* -----------------counter------------------- */
+
 .counter{
-  width: 250px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+
   margin-top: 100px;
+}
+
+.counter-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btns{
+  margin-top: 30px;
+}
+
+.counter-btns{
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 0px solid;
+}
+
+.incr-btn{
+  background-color: #12c04f;
+}
+
+.decr-btn{
+  background-color: #e62121;
+}
+
+.reset-btn{
+  background-color: #dfd403;
 }
