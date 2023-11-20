@@ -6,24 +6,28 @@ function Counter() {
 	const [intervalId, setIntervalId] = useState(null);
 
 	const handleIncrement = () => {
-		setCount(count + 1);
+		setCount((prevcount) => prevcount + 1);
 	};
 
 	const handleDecrement = () => {
-		setCount(count - 1);
+		setCount((prevcount) => prevcount - 1);
 	};
 
 	const startInc = () => {
 		handleIncrement();
 
-		const id = setInterval(handleIncrement, 200);
+		const id = setInterval(() => {
+			handleIncrement();
+		}, 200);
 		setIntervalId(id);
 	};
 
 	const startDec = () => {
 		handleDecrement();
 
-		const id = setInterval(handleDecrement, 200);
+		const id = setInterval(() => {
+			handleDecrement();
+		}, 200);
 		setIntervalId(id);
 	};
 
